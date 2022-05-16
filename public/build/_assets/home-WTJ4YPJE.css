@@ -1,0 +1,8 @@
+.container {
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}

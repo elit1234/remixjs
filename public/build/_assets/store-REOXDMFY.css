@@ -1,0 +1,42 @@
+.container {
+    padding: calc(5rem + 5%) 5%;
+}
+
+.items {
+    display: grid;
+    grid-gap: 2rem 10%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 900px) {
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .items {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+
+.item {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.itemImage {
+    background: red;
+    height: 200px;
+}
+
+.itemDetails {
+    height: 50px;
+    background: #444;
+}

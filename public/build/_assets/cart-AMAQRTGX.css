@@ -1,0 +1,88 @@
+.cart__container {  
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  transform: translateX(100vw);
+  padding-top: 1rem;
+  z-index: 2;
+  font-family: Raleway;
+  overflow-y: auto;
+}
+
+.cart__container.active {
+    transform: translateX(0);
+}
+
+.cart__title {
+    text-align: center;
+    font-size: calc(20px + 0.25vw);
+    font-weight: 600;   
+}
+
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.cart__item {
+    height: 10rem;
+    border-bottom: 1px solid grey;
+    display: grid; 
+    padding: 2rem;
+    grid-template-columns: 6.5rem 1fr 0.2fr; 
+    grid-template-rows: repeat(4, 1.7rem); 
+    gap: 0px 5%; 
+    font-size: calc(18px + 0.25vw);
+    grid-template-areas: 
+        "cartItemImage cartItemName cartRemoveIcon"
+        "cartItemImage cartItemPrice ."
+        "cartItemImage . ."
+        "cartItemImage cartItemQuantity ."; 
+}
+
+.cart__itemImage {
+    grid-area: cartItemImage;
+    background: red;
+    border-radius: 1rem;
+}
+
+.cart__itemName {
+    grid-area: cartItemName;
+}
+
+.cart__itemPrice {
+    grid-area: cartItemPrice;
+    font-weight: 600;
+}
+
+.cart__itemQuantity {
+    grid-area: cartItemQuantity;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.cart__itemQuantityButton {
+    background: #ebebeb;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.cart__itemRemove {
+    grid-area: cartRemoveIcon;
+    align-self: center;
+}
+
+.cart__itemRemove svg {
+    cursor: pointer;
+}

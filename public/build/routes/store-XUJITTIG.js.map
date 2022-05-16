@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\eli\\Documents\\Javascript\\remix-asics\\app\\routes\\store.tsx?browser", "../../../app/routes/store.tsx"],
+  "sourcesContent": ["export { default } from \"C:\\\\Users\\\\eli\\\\Documents\\\\Javascript\\\\remix-asics\\\\app\\\\routes\\\\store.tsx\";", "const Store = () => {\r\n  return <h1>Viewing our items:</h1>;\r\n};\r\n\r\nexport default Store;\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAA,IAAM,QAAQ,MAAM;AAClB,SAAO,oCAAC,MAAD,MAAI;AAAA;AAGb,IAAO,gBAAQ;",
+  "names": []
+}

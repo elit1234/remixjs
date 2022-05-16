@@ -1,0 +1,72 @@
+:root {
+  --blue: #21255b;
+  --background: #f3f3f3;
+  --subBackground: #ececec;
+  --foreground: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #6b75ff;
+    --background: #0e0d0d;
+    --subBackground: #212121;
+    --foreground: #fff;
+  }
+}
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.app-wrapper {
+  overflow: hidden !important;
+  width: 90vw !important;
+}
+
+.body-wrapper {
+  padding-top: 5.5rem;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/raleway/raleway-v27-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/raleway/raleway-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("/fonts/raleway/raleway-v27-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/raleway/raleway-v27-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""),
+    url("/fonts/raleway/raleway-v27-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/raleway/raleway-v27-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

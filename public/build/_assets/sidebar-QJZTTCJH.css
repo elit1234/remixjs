@@ -1,0 +1,66 @@
+.sidebar__page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--subBackground);
+  transition: transform 0.6s ease;
+  will-change: transform;
+  transform: translateX(100vw);
+}
+
+.sidebar__container {
+  z-index: 1;
+  margin-top: 5rem;
+  overflow-y: auto;
+  padding: 0 0 5rem 0;
+  font-family: Raleway;
+}
+.sidebar__container.active {
+  transform: translateX(0);
+}
+
+.sidebar__categories {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sidebar__category {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: calc(25px + 0.25vw);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  transition: opacity 0.2s ease-in-out;
+  will-change: opacity;
+  white-space: nowrap;
+}
+
+.sidebar__category.nothing {
+  cursor: default;
+}
+
+.sidebar__category:not(.nothing):hover {
+  opacity: 0.4;
+}
+
+.sidebar__secondPage {
+  z-index: 2;
+}
+.sidebar__secondPage.active {
+  transform: translateX(0);
+}
+
+.sidebar__thirdPage {
+  z-index: 3;
+}
+.sidebar__thirdPage.active {
+  transform: translateX(0);
+}
+
+.sidebar__rightArrow_svg {
+  fill: var(--blue);
+}

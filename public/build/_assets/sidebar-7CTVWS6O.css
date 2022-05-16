@@ -1,0 +1,37 @@
+.sidebar__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  transition: transform 0.6s ease;
+  will-change: transition;
+  transform: translateX(110vw);
+  z-index: 1;
+  margin-top: 5rem;
+  overflow-y: auto;
+  padding: 0 0 5rem 0;
+}
+.sidebar__container.active {
+  transform: translateX(0);
+}
+
+.sidebar__categories {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sidebar__category {
+  color: var(--blue);
+  font-family: Raleway;
+  font-size: calc(25px + 0.25vw);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.sidebar__category:hover {
+  opacity: 0.4;
+}

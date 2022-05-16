@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    max-height: 800px;
+    padding: 0;
+}
+
+.top-image {
+    background: url("https://i.ibb.co/ZMWnczX/ezgif-com-gif-maker-3.webp") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}

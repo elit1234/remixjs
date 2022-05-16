@@ -1,0 +1,7 @@
+.container {
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}

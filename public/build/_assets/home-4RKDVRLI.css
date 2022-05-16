@@ -1,0 +1,7 @@
+.container {
+    background: red;
+    height: 100vh;
+    max-height: 600px;
+    display: flex;
+
+}

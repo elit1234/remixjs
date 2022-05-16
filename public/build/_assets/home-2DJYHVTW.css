@@ -1,0 +1,85 @@
+.container {
+    height: 100%;
+    padding: 0;
+
+}
+
+.top-image {
+    background: url("https://i.ibb.co/ZMWnczX/ezgif-com-gif-maker-3.webp") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-position: center bottom;
+}
+
+.top-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Raleway;
+    padding: 0 5%;
+    padding-top: 5rem;
+    gap: 1rem 0;
+    font-size: calc(30px + 0.25vw);
+
+}
+
+.top-text-animate {
+    
+    transform: translateY(-50px);
+    will-change: opacity, transform;
+    transition: opacity 1s ease, transform 0.6s ease;
+    opacity: 0;
+}
+
+
+
+.top-text-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.top-secondText {
+    font-weight: bold;
+}
+
+.top-paragraph {
+    align-self: center;
+    text-align: center;
+    padding: 5%;
+    font-size: calc(18px + 0.25vw);
+    color: #e6e6e6;
+    line-height: 2.5rem;
+    padding-bottom: 3rem;
+    transform: translateY(-50px);
+    transition: transform 0.8s ease;
+    will-change: transform;
+}
+
+.top-paragraph.show {
+    transform: translateY(0);
+}
+
+.top-getStarted {
+    background: #000;
+    color: #fff;
+    height: 4rem;
+    width: 200px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    font-size: calc(18px + 0.25vw);
+    font-family: Raleway;
+    font-weight: bolder;
+
+}

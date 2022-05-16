@@ -1,0 +1,30 @@
+.topbar__container {
+  background: var(--subBackground);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.topbar__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  gap: 0 1rem;
+}
+
+.topbar__right svg {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  fill: var(--foreground);
+}
+
+.topbar__logo a {
+  color: var(--blue);
+  font-family: Raleway;
+  font-size: calc(45px + 0.25vw);
+  font-weight: bold;
+  text-decoration: none;
+}

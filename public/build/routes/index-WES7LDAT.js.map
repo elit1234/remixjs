@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["empty-module:~/utils/db.server", "browser-route-module:/Users/owner/Documents/Eli/remix-app/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["module.exports = {};", "export { default } from \"/Users/owner/Documents/Eli/remix-app/app/routes/index.tsx\";", "import { useLoaderData } from \"@remix-run/react\";\nimport type { LoaderFunction } from \"@remix-run/node\";\nimport type { Beverage } from \"@prisma/client\"\n\nimport db from \"~/utils/db.server\"\n\ntype LoaderData = { items: Array<Beverage> };\n\nexport const loader: LoaderFunction = async () => {\n  const data = {\n    items: await db.beverage.findMany()\n  }\n  return data;\n}\nexport default function Index() {\n  const data = useLoaderData<LoaderData>()\n  return (\n    <>\n      {data.items.map((item) => (\n        <span key={item.id} style={{ marginRight: \"2px \"}}>\n          {item.name === \"coffee\" ? <span>C</span> : <span>B</span>}\n        </span>\n      ))}\n    </>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAAA,WAAO,UAAU;AAAA;AAAA;;;ACAjB;;;ACAA;AAIA,gBAAe;AAUA,iBAAiB;AAC9B,QAAM,OAAO;AACb,SACE,0DACG,KAAK,MAAM,IAAI,CAAC,SACf,oCAAC,QAAD;AAAA,IAAM,KAAK,KAAK;AAAA,IAAI,OAAO,EAAE,aAAa;AAAA,KACvC,KAAK,SAAS,WAAW,oCAAC,QAAD,MAAM,OAAW,oCAAC,QAAD,MAAM;AAAA;",
+  "names": []
+}

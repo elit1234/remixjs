@@ -1,0 +1,18 @@
+html,
+body,
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #d6d6d6;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  padding-top: 6rem;
+}

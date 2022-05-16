@@ -1,0 +1,18 @@
+.topbar__container {
+  height: 5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.topbar__right {
+  background: blue;
+  justify-self: flex-end;
+}

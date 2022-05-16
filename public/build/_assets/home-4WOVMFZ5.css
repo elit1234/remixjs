@@ -1,0 +1,10 @@
+.container {
+    height: 100vh;
+    max-height: 800px;
+    padding: 0;
+}
+
+.top-image {
+    height: 100vh;
+    max-height: 1000px;
+}

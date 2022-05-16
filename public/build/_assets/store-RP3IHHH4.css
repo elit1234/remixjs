@@ -1,0 +1,16 @@
+.container {
+    padding: 5.5rem 0;
+}
+
+.items {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    background: blue;
+}
+
+.item {
+    height: 250px;
+    width: 100%;
+    background: red;
+}

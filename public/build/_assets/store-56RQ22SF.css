@@ -1,0 +1,12 @@
+.container {
+    padding-top: 4rem;
+}
+
+.items {
+    display: grid;
+  grid-gap: 1rem;
+}
+
+.item {
+
+}

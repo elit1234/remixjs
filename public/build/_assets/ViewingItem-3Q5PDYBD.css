@@ -1,0 +1,12 @@
+.container {
+    padding-top: calc(3rem + 5%);
+}
+
+.topImage {
+    background: url("https://i.ibb.co/ZMWnczX/ezgif-com-gif-maker-3.webp") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+}

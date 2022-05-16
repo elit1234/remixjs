@@ -1,0 +1,15 @@
+.container {
+    padding-top: 4rem;
+}
+
+.items {
+    display: grid;
+    grid-gap: 1rem;
+    background: blue;
+}
+
+.item {
+    height: 250px;
+    width: 100%;
+    background: red;
+}

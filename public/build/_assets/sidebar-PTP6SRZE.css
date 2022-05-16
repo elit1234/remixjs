@@ -1,0 +1,11 @@
+.sidebar__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  transition: transform 1s ease;
+  will-change: transition;
+  transform: translateX(100vw);
+}

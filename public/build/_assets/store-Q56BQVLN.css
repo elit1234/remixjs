@@ -1,0 +1,27 @@
+.container {
+    padding: calc(5rem + 5%) 5%;
+}
+
+.items {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 700px) {
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.item {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemImage {
+    background: red;
+    height: 200px;
+}

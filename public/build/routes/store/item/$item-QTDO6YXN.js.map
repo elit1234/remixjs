@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\eli\\Documents\\Javascript\\remix-asics\\app\\routes\\store\\item\\$item.tsx?browser", "../../../../../app/routes/store/item/$item.tsx"],
+  "sourcesContent": ["export { default, links } from \"C:\\\\Users\\\\eli\\\\Documents\\\\Javascript\\\\remix-asics\\\\app\\\\routes\\\\store\\\\item\\\\$item.tsx\";", "import { LinksFunction } from \"@remix-run/node\";\r\nimport { useParams } from \"@remix-run/react\";\r\nimport styles from \"~/styles/ViewingItem.css\";\r\n\r\nexport const links: LinksFunction = () => [\r\n  {\r\n    rel: \"stylesheet\",\r\n    href: styles,\r\n  },\r\n];\r\nconst ViewingItem = () => {\r\n  const { item: itemId } = useParams();\r\n  console.log(itemId);\r\n  return <div style={{ paddingTop: \"5.5rem\" }}>Yyou are viewing item</div>;\r\n};\r\n\r\nexport default ViewingItem;\r\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;;;;;;AAIO,IAAM,QAAuB,MAAM;AAAA,EACxC;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA;AAAA;AAGV,IAAM,cAAc,MAAM;AACxB,QAAM,EAAE,MAAM,WAAW;AACzB,UAAQ,IAAI;AACZ,SAAO,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,YAAY;AAAA,KAAY;AAAA;AAG/C,IAAO,eAAQ;",
+  "names": []
+}

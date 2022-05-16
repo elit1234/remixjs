@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\eli\\Documents\\Javascript\\remix-asics\\app\\routes\\store.tsx?browser", "../../../app/routes/store.tsx"],
+  "sourcesContent": ["export { default, links } from \"C:\\\\Users\\\\eli\\\\Documents\\\\Javascript\\\\remix-asics\\\\app\\\\routes\\\\store.tsx\";", "import { LinksFunction } from \"@remix-run/node\";\r\nimport styles from \"~/styles/store.css\";\r\nexport const links: LinksFunction = () => [\r\n  {\r\n    rel: \"stylesheet\",\r\n    href: styles,\r\n  },\r\n];\r\n\r\nconst Store = () => {\r\n  return <h1>Viewing our items:</h1>;\r\n};\r\n\r\nexport default Store;\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;;;;;;AAEO,IAAM,QAAuB,MAAM;AAAA,EACxC;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA;AAAA;AAIV,IAAM,QAAQ,MAAM;AAClB,SAAO,oCAAC,MAAD,MAAI;AAAA;AAGb,IAAO,iBAAQ;",
+  "names": []
+}

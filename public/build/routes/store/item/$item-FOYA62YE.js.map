@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\eli\\Documents\\Javascript\\remix-asics\\app\\routes\\store\\item\\$item.tsx?browser", "../../../../../app/routes/store/item/$item.tsx"],
+  "sourcesContent": ["export { default } from \"C:\\\\Users\\\\eli\\\\Documents\\\\Javascript\\\\remix-asics\\\\app\\\\routes\\\\store\\\\item\\\\$item.tsx\";", "import { useParams } from \"@remix-run/react\";\r\nimport styles from \"~/styles/ViewingItem.css\";\r\nconst ViewingItem = () => {\r\n  const { item: itemId } = useParams();\r\n  console.log(itemId);\r\n  return <div style={{ paddingTop: \"5.5rem\" }}>Yyou are viewing item</div>;\r\n};\r\n\r\nexport default ViewingItem;\r\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAEA,IAAM,cAAc,MAAM;AACxB,QAAM,EAAE,MAAM,WAAW;AACzB,UAAQ,IAAI;AACZ,SAAO,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,YAAY;AAAA,KAAY;AAAA;AAG/C,IAAO,eAAQ;",
+  "names": []
+}
